@@ -677,6 +677,12 @@ video {
   clip-path: polygon(0% 0%, 100% 0%, 100% 97.76%, 31.73% 100%, 0% 97.76%);
 }
 
+@media not all and (min-width: 640px) {
+  .max-sm\:block {
+    display: block;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:m-20 {
     margin: 5rem;
@@ -777,6 +783,10 @@ video {
 
   .md\:w-\[50\%\] {
     width: 50%;
+  }
+
+  .md\:w-2\/3 {
+    width: 66.666667%;
   }
 
   .md\:flex-col {
