@@ -1,4 +1,22 @@
 {
+  "name": "website-g-6",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/BabrahUSA20/Website-G-6#readme",
+  "bugs": {
+    "url": "https://github.com/BabrahUSA20/Website-G-6/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BabrahUSA20/Website-G-6.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "devDependencies": {
     "tailwindcss": "^3.4.17"
   }
