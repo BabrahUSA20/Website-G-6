@@ -17,40 +17,7 @@
       });
   };
   window.onload = () => {
-    loadComponents("header", "src/sections/header.html", () => {
-      const mobileMenuButton = document.getElementById("mobile-menu-button");
-      const mobileMenu = document.getElementById("mobile-menu");
-      const closeMenuButton = document.getElementById("close-menu-button");
-      const logo = document.querySelector(".relative"); 
-      const langSelector = document.querySelector(".flex.flex-col.text-sm.font-semibold"); 
-      function openMenu() {
-        mobileMenu.classList.remove("hidden");
-        mobileMenuButton.classList.add("hidden");
-        logo.classList.add("hidden");
-        langSelector.classList.add("hidden");
-      }
-
-      function closeMenu() {
-        mobileMenu.classList.add("hidden");
-        mobileMenuButton.classList.remove("hidden");
-        logo.classList.remove("hidden");
-        langSelector.classList.remove("hidden");
-      }
-      mobileMenuButton.addEventListener("click", openMenu);
-      closeMenuButton.addEventListener("click", closeMenu);
-
-      window.addEventListener("resize", function () {
-        if (window.innerWidth >= 1024) {
-          mobileMenu.classList.add("hidden");
-          mobileMenuButton.classList.remove("hidden");
-          logo.classList.remove("hidden");
-          langSelector.classList.remove("hidden");
-        }
-      });
-
-
-    });
-
+    loadComponents("header", "src/sections/header.html");
     loadComponents("hero", "src/sections/hero.html");
     
     loadComponents("contact", "src/sections/contact.html");
