@@ -239,9 +239,17 @@
   .text-\[24px\] {
     font-size: 24px;
   }
+  .leading-8 {
+    --tw-leading: calc(var(--spacing) * 8);
+    line-height: calc(var(--spacing) * 8);
+  }
   .leading-\[100\%\] {
     --tw-leading: 100%;
     line-height: 100%;
+  }
+  .leading-\[100\] {
+    --tw-leading: 100;
+    line-height: 100;
   }
   .font-\[24px\] {
     --tw-font-weight: 24px;
@@ -258,6 +266,10 @@
   .tracking-\[0\%\] {
     --tw-tracking: 0%;
     letter-spacing: 0%;
+  }
+  .tracking-\[0\.02em\] {
+    --tw-tracking: 0.02em;
+    letter-spacing: 0.02em;
   }
   .text-green-800 {
     color: var(--color-green-800);
@@ -336,9 +348,19 @@
       font-weight: 24px;
     }
   }
+  .xl\:m-\[4\] {
+    @media (width >= 80rem) {
+      margin: 4;
+    }
+  }
   .xl\:m-auto {
     @media (width >= 80rem) {
       margin: auto;
+    }
+  }
+  .xl\:my-auto {
+    @media (width >= 80rem) {
+      margin-block: auto;
     }
   }
 }
