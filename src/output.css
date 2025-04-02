@@ -3,7 +3,9 @@
   @layer base {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
+      --tw-leading: initial;
       --tw-font-weight: initial;
+      --tw-tracking: initial;
       --tw-outline-style: solid;
     }
   }
@@ -18,6 +20,8 @@
     --color-green-800: oklch(44.8% 0.119 151.328);
     --spacing: 0.25rem;
     --container-6xl: 72rem;
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --default-font-family: var(--font-sans);
@@ -173,6 +177,9 @@
   .m-\[2rem\] {
     margin: 2rem;
   }
+  .mx-auto {
+    margin-inline: auto;
+  }
   .mb-\[2rem\] {
     margin-bottom: 2rem;
   }
@@ -203,12 +210,42 @@
   .gap-7 {
     gap: calc(var(--spacing) * 7);
   }
+  .overflow-hidden {
+    overflow: hidden;
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .font-\[Outfit\] {
+    font-family: Outfit;
+  }
+  .font-\[outfit\] {
+    font-family: outfit;
+  }
+  .font-\[utfit\] {
+    font-family: utfit;
+  }
   .font-mono {
     font-family: var(--font-mono);
+  }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .text-\[1\.5rem\] {
+    font-size: 1.5rem;
+  }
+  .text-\[24px\] {
+    font-size: 24px;
+  }
+  .leading-\[100\%\] {
+    --tw-leading: 100%;
+    line-height: 100%;
+  }
+  .font-\[24px\] {
+    --tw-font-weight: 24px;
+    font-weight: 24px;
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -217,6 +254,10 @@
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
+  }
+  .tracking-\[0\%\] {
+    --tw-tracking: 0%;
+    letter-spacing: 0%;
   }
   .text-green-800 {
     color: var(--color-green-800);
@@ -263,6 +304,38 @@
       font-size: 1.5rem;
     }
   }
+  .md\:text-\[2rem\] {
+    @media (width >= 48rem) {
+      font-size: 2rem;
+    }
+  }
+  .md\:text-\[3px\] {
+    @media (width >= 48rem) {
+      font-size: 3px;
+    }
+  }
+  .md\:text-\[24px\] {
+    @media (width >= 48rem) {
+      font-size: 24px;
+    }
+  }
+  .md\:text-\[32px\] {
+    @media (width >= 48rem) {
+      font-size: 32px;
+    }
+  }
+  .md\:font-\[24\] {
+    @media (width >= 48rem) {
+      --tw-font-weight: 24;
+      font-weight: 24;
+    }
+  }
+  .md\:font-\[24px\] {
+    @media (width >= 48rem) {
+      --tw-font-weight: 24px;
+      font-weight: 24px;
+    }
+  }
   .xl\:m-auto {
     @media (width >= 80rem) {
       margin: auto;
@@ -274,7 +347,15 @@
   inherits: false;
   initial-value: solid;
 }
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-tracking {
   syntax: "*";
   inherits: false;
 }
