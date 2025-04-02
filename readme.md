@@ -3,7 +3,7 @@
 
 A collaborative website project built by a team of 5 developers using pair programming.
 
-## Table of Contents
+# Table of Contents
 - [About](#about)
 - [Features](#features)
 - [Installation](#installation)
@@ -13,35 +13,35 @@ A collaborative website project built by a team of 5 developers using pair progr
 - [License](#license)
 
 <a id="about"></a>
-## About
+# About
 This project is developed collaboratively using pair programming methodology. Team members work in rotating pairs to ensure code quality and knowledge sharing.
 
 <a id="features"></a>
-## Features
+# Features
 - Responsive design
 - Pair-programmed code
 - Continuous integration
 
 <a id="installation"></a>
-## Installation
+# Installation
 
-1. Clone the repository:
+## 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/your-repo.git
+git clone https://github.com/BabrahUSA20/Website-G-6.git
 ```
 
-2. Install dependencies:
+## 2. Install dependencies:
 ```bash
 npm install
 ```
 
-3. Start development server:
+## 3. Start the Tailwind CLI build process:
 ```bash
-npm start
+npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
 ```
 
 <a id="development-workflow"></a>
-## Development Workflow
+# Development Workflow
 We follow these practices:
 - Rotating pair programming sessions
 - Daily standups
@@ -50,25 +50,25 @@ We follow these practices:
 - Regular merging to main branch
 
 <a id="project-structure"></a>
-## Project Structure
+# Project Structure
 
 | Branch      | Component  |
 |-------------|------------|
-| `header`    | Header     |
-| `hero`      | Hero       |
-| `contact`   | Contact    |
-| `footer`    | Footer     |
-| `strategy`  | Strategy   |
-| `privacy`   | Privacy    |
+| `ft/header`    | Header     |
+| `ft/hero`      | Hero       |
+| `ft/contact`   | Contact    |
+| `ft/footer`    | Footer     |
+| `ft/strategy`  | Strategy   |
+| `ft/privacy`   | Privacy    |
 
 To work on a component:
 ```bash
 git checkout branch-name
-# Example: git checkout header
+# Example: git checkout ft/header
 ```
 
 <a id="team"></a>
-## Team
+# Team
 | Member        |        Contact               |
 |---------------|------------------------------|
 | **@Abdoulaye**| abdoulayekardara@gmail.com   |
