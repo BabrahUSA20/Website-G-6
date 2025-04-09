@@ -1,4 +1,18 @@
 <div>
+  <style>
+    .baumeister-link {
+      color: black;
+      background-image: url("/src/assets/bg.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    @media (min-width: 1024px) {
+      .baumeister-link {
+        background-image: none;
+      }
+    }
+  </style>
   <header class="fixed top-0 left-0 right-0 z-50">
     <nav class="flex items-center justify-between p-4">
       <div class="flex flex-col text-sm font-semibold text-gray-900">
@@ -8,8 +22,7 @@
       <div class="relative">
         <a
           href="#"
-          class="text-2xl font-black text-gray-900 relative z-10"
-          style="background-image: url('/src/assets/bg.png')"
+          class="text-2xl font-black text-gray-900 relative z-10 inline-block px-4 py-2 baumeister-link"
         >
           Baumeister
         </a>
@@ -39,8 +52,13 @@
             <div class="relative">
               <a
                 href="#"
-                class="text-2xl font-black text-gray-900 relative z-10"
-                style="background-image: url('/src/assets/bg.png')"
+                class="text-2xl font-black text-gray-900 relative z-10 inline-block px-4 py-2"
+                style="
+                  background-image: url('/src/assets/bg.png');
+                  background-size: cover;
+                  background-position: center;
+                  background-repeat: no-repeat;
+                "
               >
                 Baumeister
               </a>

@@ -8,12 +8,28 @@
   </head>
   <body>
     <header>
+      <style>
+        .baumeister-link {
+          color: #0d542b;
+          background-image: url("/src/assets/bg.png");
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          display: inline-block;
+          padding: 10px 10px;
+        }
+        @media (min-width: 1024px) {
+          .baumeister-link {
+            background-image: none;
+          }
+        }
+      </style>
       <div>
         <header class="fixed top-0 left-0 right-0 z-50">
           <nav class="flex items-center justify-between p-4">
             <div
               class="flex flex-col text-sm font-semibold text-gray-900"
-              style="color: green"
+              style="color: #0d542b"
             >
               <a href="#" class="mb-1">DE</a>
               <a href="#">EN</a>
@@ -21,8 +37,7 @@
             <div class="relative">
               <a
                 href="#"
-                class="text-2xl font-black text-gray-900 relative z-10"
-                style="color: green"
+                class="text-2xl font-black text-gray-900 relative z-10 baumeister-link"
               >
                 Baumeister
               </a>
@@ -32,7 +47,7 @@
               <div class="md:block lg:hidden">
                 <label
                   for="menu-toggle"
-                  class="w-16 h-12 bg-green-600 text-white flex items-center justify-center [clip-path:polygon(5%_20%,70%_10%,100%_50%,80%_100%,5%_80%)] cursor-pointer"
+                  class="w-16 h-12 bg-green-900 text-white flex items-center justify-center [clip-path:polygon(5%_20%,70%_10%,100%_50%,80%_100%,5%_80%)] cursor-pointer"
                 >
                   <div class="flex flex-col items-center space-y-1">
                     <div class="w-6 h-0.5 bg-white"></div>
@@ -49,30 +64,30 @@
                 >
                   <div
                     class="flex flex-col text-sm font-semibold text-gray-900"
-                    style="color: green"
+                    style="color: #0d542b"
                   >
                     <a href="#" class="mb-1">DE</a>
                     <a href="#">EN</a>
                   </div>
                   <div class="relative">
-                    <a
+                    <p
                       href="#"
                       class="text-2xl font-black text-gray-900 relative z-10"
-                      style="color: green"
+                      style="color: 0d542b"
                     >
                       Baumeister
-                    </a>
+                    </p>
                   </div>
                   <label
                     for="menu-toggle"
-                    class="w-16 h-12 bg-green-600 text-white flex items-center justify-center [clip-path:polygon(5%_20%,70%_10%,100%_50%,80%_100%,5%_80%)] cursor-pointer"
+                    class="w-16 h-12 bg-green-900 text-white flex items-center justify-center [clip-path:polygon(5%_20%,70%_10%,100%_50%,80%_100%,5%_80%)] cursor-pointer"
                   >
                     <span class="text-xl font-bold">X</span>
                   </label>
                 </div>
                 <div
-                  class="flex flex-col items-center justify-center lg:mt-0 lg:items-end text-green-700 lg:text-gray-900 text-2xl lg:text-sm font-semibold"
-                  style="color: green"
+                  class="flex flex-col items-center justify-center lg:mt-0 lg:items-end text-green-900 lg:text-gray-900 text-2xl lg:text-sm font-semibold"
+                  style="color: #0d542b"
                 >
                   <a href="#" class="my-6 lg:my-0 px-4">About</a>
                   <a href="#" class="my-6 lg:my-0 px-4">Services</a>
@@ -86,58 +101,50 @@
       </div>
     </header>
     <div
-      class="overflow-hidden mx-auto text-[1.5rem] max-w-6xl xl:my-auto p-3 text-green-800 flex flex-col gap-7 md:grid md:grid-cols-2"
-      style="margin-top: 10rem"
+      class="flex md:flex-row flex-col justify-between lg:p-28 text-4xl m-10 text-green-900 md:space-y-0 space-y-24 pt-40 md:pt-56 leading-tight xl:pb-20 pb-8"
     >
-      <div class="flex flex-col gap-5 md:text-[2rem] text-2xl">
-        <div>
-          <h4 class="font-bold">IMPRINT</h4>
+      <div class="xl:text-5xl md:text-8 text-2xl space-y-12">
+        <div class="!leading-tight">
+          <h4 class="xl:text-2xl md:text-xl text-2xl font-bold">IMPRINT</h4>
           <br />
-          <p>Agentur Baumeister</p>
-          <p>Katrein Baumeister</p>
-          <p>Böckhstraße 13</p>
-          <p>10967 Berlin</p>
+          <h4 class="font-bold">Agentur Baumeister</h4>
+          <h4>Katrein Baumeister</h4>
+          <h4>Böckhstraße 13</h4>
+          <h4>10967 Berlin</h4>
         </div>
 
-        <div>
-          <p>+49 (0)30 - 490 827 87</p>
-          <a href="hallo@agentur-baumeister.com"
-            >hallo@agentur-baumeister.com</a
-          >
+        <div class="leading-tight">
+          <h4>+49 (0)30 - 490 827 87</h4>
+          <h4>hallo@agentur-baumeister.com</h4>
         </div>
 
-        <div>
-          <p class="font-bold">UST-IDNR.</p>
-          <p>DE 274 486 923</p>
+        <div class="leading-tight">
+          <h4 class="font-bold">UST-IDNR.</h4>
+          <h4>DE 274 486 923</h4>
         </div>
-        <div>
+        <div class="leading-tight">
           <h4 class="font-bold">REGISTERED OFFICE</h4>
-          <p>Berlin, Germany</p>
-          <br />
+          <h4>Berlin, Germany</h4>
         </div>
       </div>
 
       <div
-        class="mb-[2rem] text-[24px] md:text-right md:justify-end md:align-text-bottom md:mt-[13rem]"
+        class="xl:text-2xl md:text-xl text-2xl !leading-tight md:text-right text-left space-y-6 xl:w-82 md:w-72 w-full flex flex-col justify-end"
       >
         <h4 class="font-bold">DISCLAIMER</h4>
-        <br />
-        <div>
-          <p class="leading-8">
-            Despite all due care, no liability can be accepted for the accuracy,
-            completeness and up-to-dateness of the information provided. The
-            same applies to third-party websites to which
-            <a href="www.agentur-baumeister.com">www.agentur-baumeister.com</a>
-            refers by means of hyperlinks. Katrein Baumeister, Agentur
-            Baumeister accepts no liability for the content of these websites.
-          </p>
-        </div>
+        <p class="leading-8">
+          "Despite all due care, no liability can be accepted for the accuracy,
+          completeness and up to-dateness of the information provided. The same
+          applies to third-party websites to which www.agentur-baumeister.com
+          refers by means of hyperlinks. Katrein Baumeister, Agentur Baumeister
+          accepts no liability for the content of these websites."
+        </p>
       </div>
     </div>
   </body>
-  <footer style="color: green">
+  <footer style="color: #0d542b">
     <svg
-      class="mx-auto mt-10 overflow-hidden max-sm:w-[18rem] sm:h-[21rem] lg:w-[25rem] lg:h-[26rem]"
+      class="max-sm:hidden mx-auto mt-10 w-[18rem] lg:w-[25rem] lg:h-[26rem]"
       viewBox="0 0 722 418"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -157,7 +164,7 @@
           <p>Böckhstraße 13</p>
           <p>10967 Berlin</p>
         </div>
-        <div class="lg:text-right">
+        <div class="lg:text-right md:text-right">
           <a href="mailto:hallo@agentur-baumeister.com"
             >hallo@agentur-baumeister.com</a
           >
@@ -165,21 +172,21 @@
         </div>
       </div>
 
-      <div class="hidden lg:hidden justify-between xl:flex flex-row-reverse">
+      <div class="hidden xl:flex justify-between flex-row-reverse">
         <div class="flex gap-16 xl:flex flex-col xl:gap-0">
-          <a href="/src/sections/impressum.html" class="hover:underline"
-            >Impressum</a
-          >
-          <a href="/src/sections/privacy.html" class="hover:underline"
-            >Datenschutz</a
-          >
+          <a href="/src/sections/impressum.html" class="hover:underline">
+            Impressum
+          </a>
+          <a href="/src/sections/privacy.html" class="hover:underline">
+            Datenschutz
+          </a>
         </div>
         <div class="flex gap-16 justify-between xl:gap-[5rem]">
           <a href="#" class="hover:underline">LinkedIn</a>
           <a href="#" class="hover:underline">Instagram</a>
         </div>
       </div>
-      <!-- mobile -->
+
       <div class="flex sm:gap-3 justify-between xl:hidden">
         <a href="/src/sections/privacy.html" class="hover:underline"
           >Datenschutz</a
