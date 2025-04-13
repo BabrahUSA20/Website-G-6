@@ -1,0 +1,85 @@
+<div>
+  <style>
+    .baumeister-link {
+      color: black;
+      background-image: url("/src/assets/bg.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    @media (min-width: 1024px) {
+      .baumeister-link {
+        background-image: none;
+      }
+    }
+  </style>
+  <header class="fixed top-0 left-0 right-0 z-50">
+    <nav class="flex items-center justify-between p-4">
+      <div class="flex flex-col text-sm font-semibold text-gray-900">
+        <a href="#" class="mb-1">DE</a>
+        <a href="#">EN</a>
+      </div>
+      <div class="relative">
+        <a
+          href="#"
+          class="text-2xl font-black text-gray-900 relative z-10 inline-block px-4 py-2 baumeister-link"
+        >
+          Baumeister
+        </a>
+      </div>
+      <div class="relative">
+        <input type="checkbox" id="menu-toggle" class="hidden peer" />
+        <div class="md:block lg:hidden">
+          <label
+            for="menu-toggle"
+            class="w-16 h-12 bg-black text-white flex items-center justify-center [clip-path:polygon(5%_20%,70%_10%,100%_50%,80%_100%,5%_80%)] cursor-pointer"
+          >
+            <div class="flex flex-col items-center space-y-1">
+              <div class="w-6 h-0.5 bg-white"></div>
+              <div class="w-6 h-0.5 bg-white"></div>
+              <div class="w-6 h-0.5 bg-white"></div>
+            </div>
+          </label>
+        </div>
+        <div
+          class="fixed inset-0 z-50 hidden peer-checked:block lg:static lg:items-end lg:block"
+        >
+          <div class="flex justify-between items-center p-4 md:flex lg:hidden">
+            <div class="flex flex-col text-sm font-semibold text-gray-900">
+              <a href="#" class="mb-1">DE</a>
+              <a href="#">EN</a>
+            </div>
+            <div class="relative">
+              <a
+                href="#"
+                class="text-2xl font-black text-gray-900 relative z-10 inline-block px-4 py-2"
+                style="
+                  background-image: url('/src/assets/bg.png');
+                  background-size: cover;
+                  background-position: center;
+                  background-repeat: no-repeat;
+                "
+              >
+                Baumeister
+              </a>
+            </div>
+            <label
+              for="menu-toggle"
+              class="w-16 h-12 bg-black text-white flex items-center justify-center [clip-path:polygon(5%_20%,70%_10%,100%_50%,80%_100%,5%_80%)] cursor-pointer"
+            >
+              <span class="text-xl font-bold">X</span>
+            </label>
+          </div>
+          <div
+            class="flex flex-col items-center justify-center lg:mt-0 lg:items-end text-green-700 lg:text-gray-900 text-2xl lg:text-sm font-semibold"
+          >
+            <a href="#contact" class="my-6 lg:my-0 px-4">About</a>
+            <a href="#service" class="my-6 lg:my-0 px-4">Services</a>
+            <a href="#reference" class="my-6 lg:my-0 px-4">References</a>
+            <a href="#footer" class="my-6 lg:my-0 px-4">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+</div>
